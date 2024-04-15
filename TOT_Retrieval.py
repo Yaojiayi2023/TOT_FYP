@@ -46,3 +46,7 @@ print("Data Converted")
   --output run.msmarco-passage.tct_colbert-v2.bf.tsv \
   --output-format msmarco \
   --batch-size 36 --threads 12
+
+!python -m pyserini.eval.msmarco_passage_eval \
+   /content/drive/MyDrive/qrel.txt\
+   /content/drive/MyDrive/Results/run.msmarco-passage.tct_colbert-v2.bf.txt
